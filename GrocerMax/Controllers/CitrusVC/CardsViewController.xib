@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardsViewController">
+            <connections>
+                <outlet property="ccddtableView" destination="FtZ-Az-fcK" id="yqH-gS-ed3"/>
+                <outlet property="indicatorView" destination="rkk-Ll-BSP" id="R0P-97-hYh"/>
+                <outlet property="loadButton" destination="e9x-XL-cN1" id="mdC-zP-62r"/>
+                <outlet property="netBankCodeTextField" destination="kvb-cA-HFy" id="R6U-1c-3TD"/>
+                <outlet property="pickerView" destination="yYT-vF-Yf1" id="iiE-Nr-WyF"/>
+                <outlet property="saveCardsTableView" destination="tUk-Aw-ZZ3" id="pDe-qS-Nc7"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kV8-l1-LWW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9x-XL-cN1">
+                    <rect key="frame" x="16" y="522" width="288" height="35"/>
+                    <color key="backgroundColor" red="0.95235558710000001" green="0.54225712780000002" blue="0.2114394979" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="9Ed-Wg-BYQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                    <state key="normal" title="Load">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadOrPayMoney:" destination="-1" eventType="touchUpInside" id="Xl6-rN-Ujt"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="FtZ-Az-fcK" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="105" width="320" height="394"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="-10" maxX="0.0" maxY="0.0"/>
+                    <sections/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="B5K-3I-h9h"/>
+                        <outlet property="delegate" destination="-1" id="jqe-O7-bXV"/>
+                    </connections>
+                </tableView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Bank" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kvb-cA-HFy">
+                    <rect key="frame" x="16" y="120" width="288" height="30"/>
+                    <color key="tintColor" red="0.95235558710000001" green="0.54225712780000002" blue="0.2114394979" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="S1S-JF-8t8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="95U-OU-2mf"/>
+                    </connections>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="tUk-Aw-ZZ3" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="105" width="320" height="394"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Bbg-16-9wA"/>
+                        <outlet property="delegate" destination="-1" id="l5x-PW-ujv"/>
+                    </connections>
+                </tableView>
+                <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYT-vF-Yf1">
+                    <rect key="frame" x="0.0" y="406" width="320" height="162"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="162" id="6Fb-kD-d5r"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="eW0-r5-Uw4"/>
+                        <outlet property="delegate" destination="-1" id="xr8-QG-MuK"/>
+                    </connections>
+                </pickerView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="rkk-Ll-BSP">
+                    <rect key="frame" x="150" y="274" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="CG2-ua-f93"/>
+                        <constraint firstAttribute="width" constant="20" id="GER-Y3-88G"/>
+                    </constraints>
+                    <color key="color" red="0.95235558710000001" green="0.54225712780000002" blue="0.2114394979" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kvb-cA-HFy" secondAttribute="trailing" constant="16" id="0lT-af-H0a"/>
+                <constraint firstItem="kvb-cA-HFy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="2ee-Al-b5u"/>
+                <constraint firstItem="e9x-XL-cN1" firstAttribute="top" secondItem="tUk-Aw-ZZ3" secondAttribute="bottom" constant="23" id="5u7-LO-txl"/>
+                <constraint firstItem="e9x-XL-cN1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="6ds-zW-in7"/>
+                <constraint firstItem="e9x-XL-cN1" firstAttribute="top" secondItem="FtZ-Az-fcK" secondAttribute="bottom" constant="23" id="6sn-bM-Jzr"/>
+                <constraint firstAttribute="bottom" secondItem="yYT-vF-Yf1" secondAttribute="bottom" id="I7b-WT-hPV"/>
+                <constraint firstItem="tUk-Aw-ZZ3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="105" id="OBj-0s-Leq"/>
+                <constraint firstItem="FtZ-Az-fcK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="STV-xN-bsi"/>
+                <constraint firstItem="tUk-Aw-ZZ3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XFr-pR-QHA"/>
+                <constraint firstAttribute="trailing" secondItem="yYT-vF-Yf1" secondAttribute="trailing" id="YtU-pR-en1"/>
+                <constraint firstItem="yYT-vF-Yf1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fmk-kE-xPe"/>
+                <constraint firstItem="FtZ-Az-fcK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="105" id="gmP-ge-7iU"/>
+                <constraint firstAttribute="trailing" secondItem="tUk-Aw-ZZ3" secondAttribute="trailing" id="hnV-qN-vgg"/>
+                <constraint firstItem="kvb-cA-HFy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="jHM-JA-b2Z"/>
+                <constraint firstAttribute="bottom" secondItem="e9x-XL-cN1" secondAttribute="bottom" constant="11" id="uHg-fd-v1P"/>
+                <constraint firstItem="rkk-Ll-BSP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="una-VC-cCm"/>
+                <constraint firstItem="rkk-Ll-BSP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vdR-VE-TXJ"/>
+                <constraint firstAttribute="trailing" secondItem="e9x-XL-cN1" secondAttribute="trailing" constant="16" id="yX9-zA-XvA"/>
+                <constraint firstAttribute="trailing" secondItem="FtZ-Az-fcK" secondAttribute="trailing" id="zbC-Zl-aK7"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

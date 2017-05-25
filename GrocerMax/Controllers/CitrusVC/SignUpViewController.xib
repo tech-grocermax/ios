@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController">
+            <connections>
+                <outlet property="indicatorView" destination="M6w-rP-Iov" id="sak-P2-glG"/>
+                <outlet property="mobileTextField" destination="WnF-w5-rFg" id="st8-15-zAd"/>
+                <outlet property="priceLbl" destination="yOm-yl-Bdv" id="T8e-4v-twP"/>
+                <outlet property="signupButton" destination="i38-ln-Vj4" id="bpK-bB-Hvy"/>
+                <outlet property="userNameTextField" destination="Nge-Sj-fXh" id="MoC-il-YGX"/>
+                <outlet property="view" destination="iN0-l3-epB" id="q90-fk-EZh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CitrusLogo" translatesAutoresizingMaskIntoConstraints="NO" id="JmI-eW-UiB">
+                    <rect key="frame" x="0.0" y="80" width="320" height="92"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="92" id="1ei-rA-0aJ"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="M6w-rP-Iov">
+                    <rect key="frame" x="150" y="274" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Avl-Pk-0q8"/>
+                        <constraint firstAttribute="width" constant="20" id="E6J-Xc-rMC"/>
+                    </constraints>
+                    <color key="color" red="0.95235558710000001" green="0.54225712780000002" blue="0.2114394979" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WnF-w5-rFg">
+                    <rect key="frame" x="20" y="296" width="280" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ibA-9f-RWy"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nge-Sj-fXh" userLabel="yaddyboy100@mailinator.com">
+                    <rect key="frame" x="20" y="242" width="280" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="VPv-0k-wFw"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i38-ln-Vj4">
+                    <rect key="frame" x="10" y="523" width="300" height="35"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="p8D-Xt-eXo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                    <state key="normal" title="Get Started">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="linkUser:" destination="-1" eventType="touchUpInside" id="SKw-LZ-0ph"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rs. 340.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOm-yl-Bdv">
+                    <rect key="frame" x="20" y="189" width="280" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="9oP-0y-3s0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yOm-yl-Bdv" secondAttribute="trailing" constant="20" id="4md-Y3-Rsq"/>
+                <constraint firstItem="JmI-eW-UiB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="68M-qa-dBM"/>
+                <constraint firstItem="Nge-Sj-fXh" firstAttribute="top" secondItem="yOm-yl-Bdv" secondAttribute="bottom" constant="25" id="6Mh-Vl-VkB"/>
+                <constraint firstAttribute="trailing" secondItem="JmI-eW-UiB" secondAttribute="trailing" id="Ieb-qw-wSi"/>
+                <constraint firstAttribute="trailing" secondItem="i38-ln-Vj4" secondAttribute="trailing" constant="10" id="K77-25-W9L"/>
+                <constraint firstItem="M6w-rP-Iov" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MuQ-4z-wvJ"/>
+                <constraint firstItem="WnF-w5-rFg" firstAttribute="top" secondItem="Nge-Sj-fXh" secondAttribute="bottom" constant="24" id="Rxq-yl-D4a"/>
+                <constraint firstItem="Nge-Sj-fXh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="UKH-4D-QYm"/>
+                <constraint firstItem="i38-ln-Vj4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="bBl-sF-dDq"/>
+                <constraint firstAttribute="trailing" secondItem="WnF-w5-rFg" secondAttribute="trailing" constant="20" id="bVG-28-Tqp"/>
+                <constraint firstAttribute="trailing" secondItem="Nge-Sj-fXh" secondAttribute="trailing" constant="20" id="dk1-IF-9im"/>
+                <constraint firstItem="yOm-yl-Bdv" firstAttribute="top" secondItem="JmI-eW-UiB" secondAttribute="bottom" constant="17" id="hbe-Ol-gcv"/>
+                <constraint firstItem="yOm-yl-Bdv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="lxc-fO-GbD"/>
+                <constraint firstAttribute="bottom" secondItem="i38-ln-Vj4" secondAttribute="bottom" constant="10" id="na1-Ms-eUf"/>
+                <constraint firstItem="M6w-rP-Iov" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nbV-JU-1ET"/>
+                <constraint firstItem="JmI-eW-UiB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="vnD-bL-xnw"/>
+                <constraint firstItem="WnF-w5-rFg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="y8h-mI-Qkr"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CitrusLogo" width="180" height="120"/>
+    </resources>
+</document>

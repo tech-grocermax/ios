@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GMOrderDetailHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hri-yb-XKa">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order ID: 839402" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mig-CI-rsj">
+                            <rect key="frame" x="10" y="0.0" width="300" height="42"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="7M2-y8-jxv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="mig-CI-rsj" firstAttribute="top" secondItem="hri-yb-XKa" secondAttribute="top" id="6dR-JU-sSm"/>
+                        <constraint firstAttribute="trailing" secondItem="mig-CI-rsj" secondAttribute="trailing" constant="10" id="8SM-PF-mFq"/>
+                        <constraint firstItem="mig-CI-rsj" firstAttribute="leading" secondItem="hri-yb-XKa" secondAttribute="leading" constant="10" id="Tn4-fz-tDx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hri-yb-XKa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Hli-jN-eKd"/>
+                <constraint firstAttribute="bottom" secondItem="hri-yb-XKa" secondAttribute="bottom" id="OlV-nk-w7T"/>
+                <constraint firstAttribute="trailing" secondItem="hri-yb-XKa" secondAttribute="trailing" id="RG9-LH-Ry1"/>
+                <constraint firstItem="hri-yb-XKa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="auO-qF-X9i"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerBgView" destination="hri-yb-XKa" id="r0e-sZ-dyG"/>
+                <outlet property="headerTitleLbl" destination="mig-CI-rsj" id="81T-sk-EEV"/>
+            </connections>
+            <point key="canvasLocation" x="227" y="-54.5"/>
+        </view>
+    </objects>
+</document>

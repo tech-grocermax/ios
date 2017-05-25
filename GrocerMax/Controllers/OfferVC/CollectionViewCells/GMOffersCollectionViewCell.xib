@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GMOffersCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvb-Sn-gkR">
+                        <rect key="frame" x="8" y="8" width="304" height="146"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Quz-Xr-MLk">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="146"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Quz-Xr-MLk" firstAttribute="top" secondItem="dvb-Sn-gkR" secondAttribute="top" id="J5s-zi-GFZ"/>
+                            <constraint firstItem="Quz-Xr-MLk" firstAttribute="leading" secondItem="dvb-Sn-gkR" secondAttribute="leading" id="VHv-0P-j0f"/>
+                            <constraint firstAttribute="trailing" secondItem="Quz-Xr-MLk" secondAttribute="trailing" id="qf3-qo-KGi"/>
+                            <constraint firstAttribute="bottom" secondItem="Quz-Xr-MLk" secondAttribute="bottom" id="sVc-nf-82c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dvb-Sn-gkR" secondAttribute="trailing" constant="8" id="U71-o1-zAn"/>
+                <constraint firstItem="dvb-Sn-gkR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="chm-ka-Bwb"/>
+                <constraint firstItem="dvb-Sn-gkR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="m4f-Qt-q6T"/>
+                <constraint firstAttribute="bottom" secondItem="dvb-Sn-gkR" secondAttribute="bottom" id="wrK-IU-MG9"/>
+            </constraints>
+            <size key="customSize" width="173" height="176"/>
+            <connections>
+                <outlet property="itemImgView" destination="Quz-Xr-MLk" id="uCP-zT-Szh"/>
+            </connections>
+            <point key="canvasLocation" x="223" y="167"/>
+        </collectionViewCell>
+    </objects>
+</document>

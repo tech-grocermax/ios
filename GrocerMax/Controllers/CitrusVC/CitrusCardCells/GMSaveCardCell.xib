@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GMSaveCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save this Card" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0f-Wy-DYh">
+                        <rect key="frame" x="21" y="12.5" width="135" height="17.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="135" id="7Kn-Wd-8BW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                        <color key="textColor" red="0.95235558710000001" green="0.54225712780000002" blue="0.2114394979" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" tag="2005" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DKi-4x-Uty">
+                        <rect key="frame" x="260" y="7" width="51" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="7VM-gA-D9X"/>
+                            <constraint firstAttribute="height" constant="31" id="fJ8-Fp-Rtt"/>
+                        </constraints>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O0f-Wy-DYh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4.5" id="5xy-kf-BJh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="O0f-Wy-DYh" secondAttribute="bottom" constant="5.5" id="Hb1-ra-HpZ"/>
+                    <constraint firstItem="O0f-Wy-DYh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="13" id="gUD-ft-dga"/>
+                    <constraint firstItem="DKi-4x-Uty" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="l4x-S2-u75"/>
+                    <constraint firstAttribute="trailing" secondItem="DKi-4x-Uty" secondAttribute="trailing" constant="11" id="nXp-GY-4kx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="saveSwitchBtn" destination="DKi-4x-Uty" id="hGm-oQ-MMh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

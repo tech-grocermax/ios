@@ -1,2 +1,1 @@
-# ios
-clone of ios project
+# grocermax_ios

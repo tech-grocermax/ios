@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="212" id="KGk-i7-Jjw" customClass="GMShopByCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="214.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fG5-mx-cqF">
+                        <rect key="frame" x="0.0" y="10" width="320" height="204.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="EhY-gj-SjV">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZi-TS-3oB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="My7-gK-CRw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KZi-TS-3oB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1bw-F2-q97"/>
+                    <constraint firstAttribute="trailing" secondItem="KZi-TS-3oB" secondAttribute="trailing" id="Smo-FN-jj9"/>
+                    <constraint firstItem="fG5-mx-cqF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UpB-Cx-eCe"/>
+                    <constraint firstItem="KZi-TS-3oB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZR1-sQ-bEO"/>
+                    <constraint firstAttribute="trailing" secondItem="fG5-mx-cqF" secondAttribute="trailing" id="ah8-GE-8pv"/>
+                    <constraint firstItem="fG5-mx-cqF" firstAttribute="top" secondItem="KZi-TS-3oB" secondAttribute="bottom" id="bzu-M2-mEP"/>
+                    <constraint firstAttribute="bottom" secondItem="fG5-mx-cqF" secondAttribute="bottom" id="l7x-HX-u17"/>
+                    <constraint firstItem="fG5-mx-cqF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ylk-Ws-fu6"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="ylk-Ws-fu6"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="categoryCollectionView" destination="fG5-mx-cqF" id="ecD-kb-VKc"/>
+            </connections>
+            <point key="canvasLocation" x="285" y="293.5"/>
+        </tableViewCell>
+    </objects>
+</document>

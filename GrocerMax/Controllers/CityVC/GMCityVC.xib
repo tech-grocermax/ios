@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GMCityVC">
+            <connections>
+                <outlet property="cityTableView" destination="3Ct-8D-zoT" id="ZCt-Hl-Qbd"/>
+                <outlet property="delhiBtn" destination="kn4-6R-Rsj" id="bWe-WT-vld"/>
+                <outlet property="gurgaonBtn" destination="bEl-q1-8uL" id="z3c-24-1IE"/>
+                <outlet property="noidaBtn" destination="w4b-nn-jfC" id="tMz-bv-Sf0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-screen_bg" translatesAutoresizingMaskIntoConstraints="NO" id="fpC-LG-i0p">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kn4-6R-Rsj">
+                    <rect key="frame" x="118" y="115" width="85" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="9Tb-0m-CCV"/>
+                        <constraint firstAttribute="height" constant="70" id="Qlq-8u-Dwx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <inset key="titleEdgeInsets" minX="-26" minY="0.0" maxX="0.0" maxY="-40"/>
+                    <inset key="imageEdgeInsets" minX="24" minY="-19" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Delhi" image="location">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="Delhi" image="location_selected"/>
+                    <connections>
+                        <action selector="actionDelhiBtnClicked:" destination="-1" eventType="touchUpInside" id="WMU-LX-dCX"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEl-q1-8uL">
+                    <rect key="frame" x="118" y="205" width="85" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="jEy-0B-Bz8"/>
+                        <constraint firstAttribute="width" constant="85" id="sUE-rO-rL2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <inset key="titleEdgeInsets" minX="-26" minY="0.0" maxX="0.0" maxY="-40"/>
+                    <inset key="imageEdgeInsets" minX="24" minY="-19" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Gurgaon" image="location">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="Gurgaon" image="location_selected"/>
+                    <connections>
+                        <action selector="actionGurgaonBtnClicked:" destination="-1" eventType="touchUpInside" id="DNO-tE-gUj"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4b-nn-jfC">
+                    <rect key="frame" x="118" y="295" width="85" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="P38-Rg-ZDP"/>
+                        <constraint firstAttribute="height" constant="70" id="WqT-dx-dJ8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <inset key="titleEdgeInsets" minX="-26" minY="0.0" maxX="0.0" maxY="-40"/>
+                    <inset key="imageEdgeInsets" minX="24" minY="-19" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Noida" image="location">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="Noida" image="location_selected"/>
+                    <connections>
+                        <action selector="actionNoidaBtnClicked:" destination="-1" eventType="touchUpInside" id="mw8-Tu-Ezc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where would you like us to deliver?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcb-36-oOF">
+                    <rect key="frame" x="0.0" y="50" width="320" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="Ug4-1j-1a3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcH-ov-5LL" customClass="GMButton">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <color key="backgroundColor" red="0.054901960784313725" green="0.41176470588235292" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="lGR-pj-hS8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="START SHOPPING">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionSaveBtnClicked:" destination="-1" eventType="touchUpInside" id="Osa-9e-Ahb"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3Ct-8D-zoT">
+                    <rect key="frame" x="0.0" y="98" width="320" height="381"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1Y3-lj-lBN"/>
+                        <outlet property="delegate" destination="-1" id="oUg-Sg-gz0"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LcH-ov-5LL" firstAttribute="top" secondItem="3Ct-8D-zoT" secondAttribute="bottom" constant="45" id="2og-Dl-9sI"/>
+                <constraint firstAttribute="trailing" secondItem="LcH-ov-5LL" secondAttribute="trailing" id="5ND-dm-leJ"/>
+                <constraint firstAttribute="centerX" secondItem="kn4-6R-Rsj" secondAttribute="centerX" id="6aC-yx-N4I"/>
+                <constraint firstItem="kcb-36-oOF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="F4G-9S-NBe"/>
+                <constraint firstItem="fpC-LG-i0p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HwB-ak-YBN"/>
+                <constraint firstItem="kn4-6R-Rsj" firstAttribute="top" secondItem="kcb-36-oOF" secondAttribute="bottom" constant="37" id="N6I-ux-XPJ"/>
+                <constraint firstAttribute="trailing" secondItem="3Ct-8D-zoT" secondAttribute="trailing" id="OuU-UQ-00T"/>
+                <constraint firstItem="3Ct-8D-zoT" firstAttribute="top" secondItem="kcb-36-oOF" secondAttribute="bottom" constant="20" id="Tm8-Ho-GFe"/>
+                <constraint firstItem="LcH-ov-5LL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Vfd-eG-wFX"/>
+                <constraint firstItem="LcH-ov-5LL" firstAttribute="top" secondItem="fpC-LG-i0p" secondAttribute="bottom" id="YgE-Pa-rdT"/>
+                <constraint firstItem="fpC-LG-i0p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bZA-FN-t2w"/>
+                <constraint firstItem="3Ct-8D-zoT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="djb-MY-yYf"/>
+                <constraint firstAttribute="bottom" secondItem="LcH-ov-5LL" secondAttribute="bottom" id="gGb-TQ-gcO"/>
+                <constraint firstAttribute="trailing" secondItem="kcb-36-oOF" secondAttribute="trailing" id="pWz-h4-60x"/>
+                <constraint firstAttribute="trailing" secondItem="fpC-LG-i0p" secondAttribute="trailing" id="peQ-CG-xjj"/>
+                <constraint firstItem="w4b-nn-jfC" firstAttribute="top" secondItem="bEl-q1-8uL" secondAttribute="bottom" constant="20" id="szB-3A-gOw"/>
+                <constraint firstAttribute="centerX" secondItem="w4b-nn-jfC" secondAttribute="centerX" id="tzU-dj-zLN"/>
+                <constraint firstItem="bEl-q1-8uL" firstAttribute="top" secondItem="kn4-6R-Rsj" secondAttribute="bottom" constant="20" id="u7A-lf-yq3"/>
+                <constraint firstAttribute="centerX" secondItem="bEl-q1-8uL" secondAttribute="centerX" id="urY-WA-ygE"/>
+                <constraint firstItem="kcb-36-oOF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="w2q-Jn-1qH"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="location" width="34" height="34"/>
+        <image name="location_selected" width="34" height="34"/>
+        <image name="login-screen_bg" width="320" height="568"/>
+    </resources>
+</document>

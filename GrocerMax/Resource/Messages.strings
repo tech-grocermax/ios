@@ -1,0 +1,27 @@
+/* 
+  Messages.strings
+  GrocerMax
+
+  Created by Rahul Chaudhary on 10/09/15.
+  Copyright (c) 2015 Deepak Soni. All rights reserved.
+*/
+
+//Common
+
+"no_internet_connection" = "Internet Connection appears to be offline!";
+"some_error_occurred" = "Some error occurred!\nTry again later";
+"server_error_occurred" = "Server error occurred!\nTry Again!";
+
+
+
+"plzEnterEmail" = "Please enter email!";
+"plzEnterValidEmail" = "Please enter a valid email!";
+"plzEnterPassword" = "Please enter password!";
+"plzEnterPhonNumber" = "Please enter phoneNumber!";
+"plzEnterValidPhonNumber" = "Please enter a valid phone number!";
+
+
+// Search bar
+
+"plzEnterKeyword" = "Please enter at least 3 char's keyword for searching!";
+"noResultFound" = "No result found!";

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="subcategoryIdentifierCell" rowHeight="51" id="KGk-i7-Jjw" customClass="GMSubCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5O5-bi-Fhx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REZ-3t-m9c">
+                                <rect key="frame" x="10" y="0.0" width="300" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sA-J5-aSn">
+                                        <rect key="frame" x="0.0" y="5" width="145" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="6rI-yg-OPL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.22879464290000001" green="0.22879464290000001" blue="0.22879464290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zk-eg-Edt">
+                                        <rect key="frame" x="155" y="5" width="145" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="piY-D5-zaA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.17610677083333337" green="0.17610677083333337" blue="0.17610677083333337" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5sA-J5-aSn" firstAttribute="leading" secondItem="REZ-3t-m9c" secondAttribute="leading" id="HcQ-lY-EJK"/>
+                                    <constraint firstItem="3zk-eg-Edt" firstAttribute="width" secondItem="5sA-J5-aSn" secondAttribute="width" id="R2k-X7-lQr"/>
+                                    <constraint firstItem="3zk-eg-Edt" firstAttribute="top" secondItem="REZ-3t-m9c" secondAttribute="top" constant="5" id="chY-tG-HfG"/>
+                                    <constraint firstItem="5sA-J5-aSn" firstAttribute="top" secondItem="REZ-3t-m9c" secondAttribute="top" constant="5" id="jO3-nT-VTw"/>
+                                    <constraint firstAttribute="trailing" secondItem="3zk-eg-Edt" secondAttribute="trailing" id="p3s-eA-pDQ"/>
+                                    <constraint firstItem="5sA-J5-aSn" firstAttribute="width" secondItem="REZ-3t-m9c" secondAttribute="width" multiplier="0.4833" id="qlE-Jt-4ca"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="REZ-3t-m9c" secondAttribute="trailing" constant="10" id="EAp-Y4-xz0"/>
+                            <constraint firstAttribute="bottom" secondItem="REZ-3t-m9c" secondAttribute="bottom" id="HiX-Bi-Jnn"/>
+                            <constraint firstItem="REZ-3t-m9c" firstAttribute="leading" secondItem="5O5-bi-Fhx" secondAttribute="leading" constant="10" id="U18-Wa-PEJ"/>
+                            <constraint firstItem="REZ-3t-m9c" firstAttribute="top" secondItem="5O5-bi-Fhx" secondAttribute="top" id="V2Z-j3-VhK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5O5-bi-Fhx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7NK-36-L5h"/>
+                    <constraint firstAttribute="trailing" secondItem="5O5-bi-Fhx" secondAttribute="trailing" id="aaV-7U-bIQ"/>
+                    <constraint firstItem="5O5-bi-Fhx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jw5-K0-bLl"/>
+                    <constraint firstAttribute="bottom" secondItem="5O5-bi-Fhx" secondAttribute="bottom" id="paz-ax-8UG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="subCategoryBtn1" destination="5sA-J5-aSn" id="TAC-kw-Yb0"/>
+                <outlet property="subCategoryBtn2" destination="3zk-eg-Edt" id="EHc-YH-QtY"/>
+            </connections>
+            <point key="canvasLocation" x="257" y="239.5"/>
+        </tableViewCell>
+    </objects>
+</document>

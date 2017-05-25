@@ -1,0 +1,49 @@
+//
+//  GMPrefixHeader.pch
+//  GrocerMax
+//
+//  Created by Deepak Soni on 09/09/15.
+//  Copyright (c) 2015 Deepak Soni. All rights reserved.
+//
+
+#ifndef GrocerMax_GMPrefixHeader_pch
+#define GrocerMax_GMPrefixHeader_pch
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "GMSharedClass.h"
+#import "GMOperationalHandler.h"
+#import "GMRequestParams.h"
+#import "GMEnums.h"
+#import "GMSearchBarView.h"
+
+// ThirdParty/POD
+#import "RZErrorMessenger.h"
+
+// categories
+#import "UIViewController+GMProgressIndicator.h"
+#import "UIColor+Additions.h"
+#import "UIImage+Extends.h"
+#import <UIImageView+AFNetworking.h>
+
+#import "GMEnums.h"
+#import "XHDrawerController.h"
+#import <Mantle/Mantle.h>
+
+#import "GMCategoryModal.h"
+
+#import <MMDrawerController/MMDrawerController.h>
+#import "AppDelegate.h"
+
+#import "GMButton.h"
+#import "GMConstants.h"
+#import "GMUserModal.h"
+#import "GMCartRequestParam.h"
+#import "NSString+Extension.h"
+#import "UITabBarController+UpdateBagde.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+
+#endif

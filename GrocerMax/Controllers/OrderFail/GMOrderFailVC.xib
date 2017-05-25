@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GMOrderFailVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OLL-0w-r20">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payment_failure" translatesAutoresizingMaskIntoConstraints="NO" id="u4A-Sw-U5c">
+                    <rect key="frame" x="117" y="66" width="86" height="93"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="93" id="E14-HL-HcJ"/>
+                        <constraint firstAttribute="width" constant="86" id="qk2-45-y1X"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Failed :(" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECe-4C-cau">
+                    <rect key="frame" x="0.0" y="163" width="320" height="48"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="YDk-L3-P5W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" red="0.17254901960784313" green="0.3411764705882353" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your payment was processed unsuccesfully," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkY-n3-2jI">
+                    <rect key="frame" x="0.0" y="212" width="320" height="23"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="xBz-79-7Pm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="0.17254901959999999" green="0.3411764706" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please try one of the following options." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asy-qE-Hca">
+                    <rect key="frame" x="0.0" y="236" width="320" height="23"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="iWZ-wH-zLF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="0.17254901959999999" green="0.3411764706" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCu-QA-1L4" customClass="GMButton">
+                    <rect key="frame" x="8" y="274" width="304" height="37"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.59607843137254901" green="0.16862745098039217" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="1k9-rI-vLG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <state key="normal" title="Reorder">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionRetryPayment:" destination="-1" eventType="touchUpInside" id="GS0-aY-8cd"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmT-WS-6jm">
+                    <rect key="frame" x="8" y="323" width="304" height="37"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.65098039215686276" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="diQ-Bg-hRI"/>
+                    </constraints>
+                    <state key="normal" title="PAY VIA CASH ON DELIVERY">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPayByCashOnDelivery:" destination="-1" eventType="touchUpInside" id="UFn-P4-kUz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNQ-M4-uwz" customClass="GMButton">
+                    <rect key="frame" x="8" y="331" width="304" height="37"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.6588235294117647" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="i9K-1B-e3L"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <state key="normal" title="CONTINUE SHOPPING">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionContinueShopping:" destination="-1" eventType="touchUpInside" id="tKc-05-OCa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="u4A-Sw-U5c" secondAttribute="centerX" id="05F-rw-Itc"/>
+                <constraint firstItem="uNQ-M4-uwz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="1Sh-So-R2f"/>
+                <constraint firstAttribute="trailing" secondItem="KCu-QA-1L4" secondAttribute="trailing" constant="8" id="2Pf-H7-8Vf"/>
+                <constraint firstAttribute="trailing" secondItem="uNQ-M4-uwz" secondAttribute="trailing" constant="8" id="2ho-YE-uf2"/>
+                <constraint firstItem="uNQ-M4-uwz" firstAttribute="top" secondItem="KCu-QA-1L4" secondAttribute="bottom" constant="20" id="3Cj-NQ-Eph"/>
+                <constraint firstItem="hmT-WS-6jm" firstAttribute="top" secondItem="KCu-QA-1L4" secondAttribute="bottom" constant="12" id="4iP-Xc-IaG"/>
+                <constraint firstItem="ECe-4C-cau" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5CS-az-BOY"/>
+                <constraint firstItem="RkY-n3-2jI" firstAttribute="top" secondItem="ECe-4C-cau" secondAttribute="bottom" constant="1" id="6HM-kX-kyz"/>
+                <constraint firstItem="OLL-0w-r20" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6zs-9h-q6Z"/>
+                <constraint firstItem="asy-qE-Hca" firstAttribute="top" secondItem="RkY-n3-2jI" secondAttribute="bottom" constant="1" id="9Tv-Je-gRn"/>
+                <constraint firstItem="hmT-WS-6jm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Ahm-9Z-AIQ"/>
+                <constraint firstItem="RkY-n3-2jI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B0N-RX-7Sp"/>
+                <constraint firstItem="OLL-0w-r20" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hx9-MX-RPn"/>
+                <constraint firstItem="ECe-4C-cau" firstAttribute="top" secondItem="u4A-Sw-U5c" secondAttribute="bottom" constant="4" id="IM9-8M-OcL"/>
+                <constraint firstItem="KCu-QA-1L4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="J1f-RA-t1Z"/>
+                <constraint firstItem="u4A-Sw-U5c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="66" id="Qfm-8i-J7Z"/>
+                <constraint firstAttribute="trailing" secondItem="hmT-WS-6jm" secondAttribute="trailing" constant="8" id="ZxY-CX-Tgx"/>
+                <constraint firstAttribute="trailing" secondItem="OLL-0w-r20" secondAttribute="trailing" id="d6V-Oq-CrQ"/>
+                <constraint firstItem="KCu-QA-1L4" firstAttribute="top" secondItem="asy-qE-Hca" secondAttribute="bottom" constant="15" id="ecF-pH-XF5"/>
+                <constraint firstItem="asy-qE-Hca" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fhk-pk-P5O"/>
+                <constraint firstAttribute="trailing" secondItem="ECe-4C-cau" secondAttribute="trailing" id="hib-yo-Ncx"/>
+                <constraint firstAttribute="trailing" secondItem="asy-qE-Hca" secondAttribute="trailing" id="iCK-Q8-dZZ"/>
+                <constraint firstAttribute="trailing" secondItem="RkY-n3-2jI" secondAttribute="trailing" id="kTq-7R-Uej"/>
+                <constraint firstAttribute="bottom" secondItem="OLL-0w-r20" secondAttribute="bottom" id="ndI-Xz-yZG"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="payment_failure" width="86" height="93"/>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GMEditProfileVC">
+            <connections>
+                <outlet property="editProfileTableView" destination="GQb-CA-1Ru" id="Gq0-O7-jhC"/>
+                <outlet property="saveBtn" destination="WXo-dE-Y5H" id="6xH-fc-ZCr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GQb-CA-1Ru" customClass="TPKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="462"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="m4f-E1-np9"/>
+                        <outlet property="delegate" destination="-1" id="RU5-2w-UZ2"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXo-dE-Y5H" customClass="GMButton">
+                    <rect key="frame" x="0.0" y="462" width="320" height="42"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.054901960780000002" green="0.41176470590000003" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="OZh-am-9ez"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="SAVE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionSaveBtn:" destination="-1" eventType="touchUpInside" id="kna-82-lov"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WXo-dE-Y5H" firstAttribute="top" secondItem="GQb-CA-1Ru" secondAttribute="bottom" id="5QX-70-Kns"/>
+                <constraint firstAttribute="bottom" secondItem="WXo-dE-Y5H" secondAttribute="bottom" id="E1s-km-veI"/>
+                <constraint firstItem="GQb-CA-1Ru" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Een-JY-nit"/>
+                <constraint firstItem="GQb-CA-1Ru" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PKN-zZ-gSf"/>
+                <constraint firstAttribute="trailing" secondItem="WXo-dE-Y5H" secondAttribute="trailing" id="biv-yd-kw4"/>
+                <constraint firstAttribute="trailing" secondItem="GQb-CA-1Ru" secondAttribute="trailing" id="sFe-OH-F6F"/>
+                <constraint firstItem="WXo-dE-Y5H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ssJ-pX-lTX"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

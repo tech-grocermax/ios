@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GMWebViewVC">
+            <connections>
+                <outlet property="customWebView" destination="cIK-QT-fx4" id="jgm-Ne-dSQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyt-oH-uPq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIK-QT-fx4">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="618"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </webView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="cIK-QT-fx4" firstAttribute="leading" secondItem="Cyt-oH-uPq" secondAttribute="leading" id="TVb-LK-niD"/>
+                        <constraint firstAttribute="bottom" secondItem="cIK-QT-fx4" secondAttribute="bottom" constant="-50" id="TyZ-gF-hT4"/>
+                        <constraint firstAttribute="trailing" secondItem="cIK-QT-fx4" secondAttribute="trailing" id="VJU-am-qLu"/>
+                        <constraint firstItem="cIK-QT-fx4" firstAttribute="top" secondItem="Cyt-oH-uPq" secondAttribute="top" id="eWN-Jk-hpH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Cyt-oH-uPq" secondAttribute="trailing" id="ad7-zR-VpO"/>
+                <constraint firstAttribute="bottom" secondItem="Cyt-oH-uPq" secondAttribute="bottom" id="iOI-t1-lxn"/>
+                <constraint firstItem="Cyt-oH-uPq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kZs-wa-ifF"/>
+                <constraint firstItem="Cyt-oH-uPq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tzE-MX-meK"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

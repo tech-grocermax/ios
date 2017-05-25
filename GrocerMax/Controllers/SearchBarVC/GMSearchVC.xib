@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GMSearchVC">
+            <connections>
+                <outlet property="searchBarView" destination="MRZ-E1-uVx" id="0ZF-uO-8RQ"/>
+                <outlet property="searchtableView" destination="S7q-jt-jPb" id="hjF-Wz-q6q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRZ-E1-uVx">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Eyb-5T-Epd"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S7q-jt-jPb">
+                    <rect key="frame" x="0.0" y="44" width="320" height="411"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="S7q-jt-jPb" secondAttribute="bottom" id="1O1-Gr-4M2"/>
+                <constraint firstAttribute="trailing" secondItem="S7q-jt-jPb" secondAttribute="trailing" id="1qC-Y7-UMG"/>
+                <constraint firstItem="MRZ-E1-uVx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="378-aS-hNI"/>
+                <constraint firstItem="MRZ-E1-uVx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Hn-4S-a9k"/>
+                <constraint firstItem="S7q-jt-jPb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AW0-2E-qKm"/>
+                <constraint firstItem="S7q-jt-jPb" firstAttribute="top" secondItem="MRZ-E1-uVx" secondAttribute="bottom" id="DGw-yH-vIs"/>
+                <constraint firstAttribute="trailing" secondItem="MRZ-E1-uVx" secondAttribute="trailing" id="H1v-6e-APN"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GMAddressFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rb1-ng-RAy">
+                    <rect key="frame" x="8" y="8" width="304" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cartPlus" translatesAutoresizingMaskIntoConstraints="NO" id="Xqf-vi-h7F">
+                            <rect key="frame" x="279" y="15" width="14" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="14" id="Pe3-ds-rvv"/>
+                                <constraint firstAttribute="height" constant="14" id="ndk-xt-t1f"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81N-KW-okT">
+                            <rect key="frame" x="8" y="0.0" width="296" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="276" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Add new address">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="81N-KW-okT" firstAttribute="top" secondItem="Rb1-ng-RAy" secondAttribute="top" id="IKT-s3-c0W"/>
+                        <constraint firstItem="Xqf-vi-h7F" firstAttribute="centerY" secondItem="Rb1-ng-RAy" secondAttribute="centerY" id="Rg6-fL-stY"/>
+                        <constraint firstAttribute="trailing" secondItem="81N-KW-okT" secondAttribute="trailing" id="XIs-ra-y67"/>
+                        <constraint firstAttribute="bottom" secondItem="81N-KW-okT" secondAttribute="bottom" id="xlw-Dy-Zjw"/>
+                        <constraint firstAttribute="trailing" secondItem="Xqf-vi-h7F" secondAttribute="trailing" constant="11" id="yCM-De-iLK"/>
+                        <constraint firstItem="81N-KW-okT" firstAttribute="leading" secondItem="Rb1-ng-RAy" secondAttribute="leading" constant="8" id="yn9-1M-hTC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Rb1-ng-RAy" secondAttribute="bottom" constant="8" id="JmI-He-adO"/>
+                <constraint firstAttribute="trailing" secondItem="Rb1-ng-RAy" secondAttribute="trailing" constant="8" id="Tqs-Dd-fSC"/>
+                <constraint firstItem="Rb1-ng-RAy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="hUu-lK-DgK"/>
+                <constraint firstItem="Rb1-ng-RAy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="oaM-cm-7h9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addNewAddressBtn" destination="81N-KW-okT" id="1HC-Mp-Ken"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="cartPlus" width="14" height="14"/>
+    </resources>
+</document>

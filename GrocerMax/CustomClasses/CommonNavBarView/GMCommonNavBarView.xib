@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GMCommonNavBarView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsU-A3-IIu" userLabel="topHeader">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhl-Ez-LYP" userLabel="backButton">
+                            <rect key="frame" x="2" y="5" width="40" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="6ek-IR-HyT"/>
+                                <constraint firstAttribute="width" constant="40" id="pX3-V5-rXX"/>
+                            </constraints>
+                            <state key="normal" image="back">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpf-eB-RBT" userLabel="menuButton">
+                            <rect key="frame" x="259" y="5" width="59" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="rcj-ut-QBq"/>
+                                <constraint firstAttribute="width" constant="59" id="uga-lJ-C1A"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="Sign Out">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvX-7t-wd9" userLabel="titleLbl">
+                            <rect key="frame" x="40" y="11" width="216" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmh-XV-pQ2" userLabel="horizantalLine">
+                            <rect key="frame" x="0.0" y="59" width="320" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="E4M-gt-mPC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.1764705882352941" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="tmh-XV-pQ2" firstAttribute="leading" secondItem="qsU-A3-IIu" secondAttribute="leading" id="1Dd-aN-gaX"/>
+                        <constraint firstItem="IvX-7t-wd9" firstAttribute="leading" secondItem="qsU-A3-IIu" secondAttribute="leading" constant="40" id="2On-qm-vs6"/>
+                        <constraint firstItem="Cpf-eB-RBT" firstAttribute="top" secondItem="qsU-A3-IIu" secondAttribute="top" constant="5" id="8mV-mz-K22"/>
+                        <constraint firstAttribute="bottom" secondItem="tmh-XV-pQ2" secondAttribute="bottom" id="EXL-8C-jMn"/>
+                        <constraint firstItem="Yhl-Ez-LYP" firstAttribute="top" secondItem="qsU-A3-IIu" secondAttribute="top" constant="5" id="JV1-Ha-zMe"/>
+                        <constraint firstAttribute="trailing" secondItem="tmh-XV-pQ2" secondAttribute="trailing" id="Kt7-zd-d8f"/>
+                        <constraint firstItem="tmh-XV-pQ2" firstAttribute="top" secondItem="IvX-7t-wd9" secondAttribute="bottom" constant="10" id="Y39-xu-Zwk"/>
+                        <constraint firstItem="Cpf-eB-RBT" firstAttribute="leading" secondItem="IvX-7t-wd9" secondAttribute="trailing" constant="3" id="aro-rM-Lbo"/>
+                        <constraint firstItem="Yhl-Ez-LYP" firstAttribute="leading" secondItem="qsU-A3-IIu" secondAttribute="leading" constant="2" id="kql-oT-veI"/>
+                        <constraint firstItem="IvX-7t-wd9" firstAttribute="top" secondItem="qsU-A3-IIu" secondAttribute="top" constant="11" id="sDg-vU-eol"/>
+                        <constraint firstAttribute="trailing" secondItem="Cpf-eB-RBT" secondAttribute="trailing" constant="2" id="zJ8-CT-2oh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qsU-A3-IIu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Om-Yh-jMH"/>
+                <constraint firstAttribute="trailing" secondItem="qsU-A3-IIu" secondAttribute="trailing" id="Vdj-F0-78T"/>
+                <constraint firstAttribute="bottom" secondItem="qsU-A3-IIu" secondAttribute="bottom" id="b88-1i-BFs"/>
+                <constraint firstItem="qsU-A3-IIu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c58-I4-nHf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backBtn" destination="Yhl-Ez-LYP" id="Cuc-Kk-75i"/>
+                <outlet property="bgView" destination="qsU-A3-IIu" id="Icg-TM-3LN"/>
+                <outlet property="horizantalLineAtBottomLbl" destination="tmh-XV-pQ2" id="GGA-CP-UI9"/>
+                <outlet property="rightButton" destination="Cpf-eB-RBT" id="x2M-D8-U6Y"/>
+                <outlet property="titleLbl" destination="IvX-7t-wd9" id="0Bg-u0-diH"/>
+            </connections>
+            <point key="canvasLocation" x="434" y="144"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="15" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController">
+            <connections>
+                <outlet property="signupOptionTwoButton" destination="bOT-9s-3Ej" id="8WG-Qi-r5S"/>
+                <outlet property="view" destination="iN0-l3-epB" id="d2y-oo-eLQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CitrusLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Xdr-gj-9FE">
+                    <rect key="frame" x="0.0" y="80" width="320" height="92"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="92" id="5HL-Lh-kxY"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOT-9s-3Ej">
+                    <rect key="frame" x="16" y="217" width="288" height="35"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.81999999999999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="BVs-pT-hLX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                    <state key="normal" title="Login with Mobile ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectLoginTypeAction:" destination="-1" eventType="touchUpInside" id="cpL-np-YIe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bOT-9s-3Ej" secondAttribute="trailing" constant="16" id="6yE-3J-HvH"/>
+                <constraint firstItem="Xdr-gj-9FE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="ApC-lC-g20"/>
+                <constraint firstItem="bOT-9s-3Ej" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="beN-BV-HEV"/>
+                <constraint firstItem="bOT-9s-3Ej" firstAttribute="top" secondItem="Xdr-gj-9FE" secondAttribute="bottom" constant="45" id="cbA-Et-S0B"/>
+                <constraint firstAttribute="trailing" secondItem="Xdr-gj-9FE" secondAttribute="trailing" id="nMk-Er-Fre"/>
+                <constraint firstItem="Xdr-gj-9FE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="trz-d4-I4f"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CitrusLogo" width="180" height="120"/>
+    </resources>
+</document>

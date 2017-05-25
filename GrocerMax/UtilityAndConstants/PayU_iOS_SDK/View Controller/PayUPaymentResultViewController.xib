@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayUPaymentResultViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="CyC-ZY-qB5" id="SRO-Vu-ebf"/>
+                <outlet property="resultWebView" destination="bVp-yn-agl" id="IRb-HJ-t20"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView autoresizesSubviews="NO" contentMode="center" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bVp-yn-agl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="CyC-ZY-qB5">
+                    <rect key="frame" x="150" y="242" width="20" height="20"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="f0U-7r-iSE"/>
+                        <constraint firstAttribute="height" constant="20" id="fAJ-RF-llP"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bVp-yn-agl" secondAttribute="trailing" id="FEh-bY-lK9"/>
+                <constraint firstItem="bVp-yn-agl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MWA-dm-1E0"/>
+                <constraint firstItem="bVp-yn-agl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QjC-LL-PYv"/>
+                <constraint firstAttribute="bottom" secondItem="bVp-yn-agl" secondAttribute="bottom" id="c5F-TU-37h"/>
+                <constraint firstAttribute="centerX" secondItem="CyC-ZY-qB5" secondAttribute="centerX" id="jew-OQ-EWw"/>
+                <constraint firstAttribute="centerY" secondItem="CyC-ZY-qB5" secondAttribute="centerY" id="scy-OX-XT3"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="355.5" y="320.5"/>
+        </view>
+    </objects>
+</document>

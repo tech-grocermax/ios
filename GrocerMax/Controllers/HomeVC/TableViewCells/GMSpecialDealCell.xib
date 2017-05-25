@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="GMSpecialDealCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="209.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVE-vn-g86">
+                        <rect key="frame" x="8" y="10" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="8sO-wp-hvX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojd-Vj-XnO">
+                        <rect key="frame" x="8" y="36" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ufl-hc-hzH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9o-Ax-bbz">
+                        <rect key="frame" x="8" y="45" width="304" height="156"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zFD-Nh-lhm">
+                                <rect key="frame" x="3" y="3" width="298" height="150"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zFD-Nh-lhm" secondAttribute="trailing" constant="3" id="5S5-Ce-gM7"/>
+                            <constraint firstItem="zFD-Nh-lhm" firstAttribute="leading" secondItem="X9o-Ax-bbz" secondAttribute="leading" constant="3" id="Kpw-Xg-aRv"/>
+                            <constraint firstAttribute="height" constant="156" id="OjK-kZ-ZYS"/>
+                            <constraint firstAttribute="bottom" secondItem="zFD-Nh-lhm" secondAttribute="bottom" constant="3" id="SYI-Ey-aoJ"/>
+                            <constraint firstItem="zFD-Nh-lhm" firstAttribute="top" secondItem="X9o-Ax-bbz" secondAttribute="top" constant="3" id="cc3-gR-Fv1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="X9o-Ax-bbz" firstAttribute="top" secondItem="Ojd-Vj-XnO" secondAttribute="bottom" constant="8" id="IjQ-1u-Twn"/>
+                    <constraint firstItem="X9o-Ax-bbz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="RiB-iF-Sde"/>
+                    <constraint firstAttribute="trailing" secondItem="gVE-vn-g86" secondAttribute="trailing" constant="8" id="T4U-pN-np2"/>
+                    <constraint firstItem="gVE-vn-g86" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="TaX-Kc-HiC"/>
+                    <constraint firstItem="Ojd-Vj-XnO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="b7m-wx-iIL"/>
+                    <constraint firstItem="gVE-vn-g86" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="cgJ-Jy-Tu0"/>
+                    <constraint firstAttribute="trailing" secondItem="X9o-Ax-bbz" secondAttribute="trailing" constant="8" id="rLd-kj-idH"/>
+                    <constraint firstItem="Ojd-Vj-XnO" firstAttribute="top" secondItem="gVE-vn-g86" secondAttribute="bottom" constant="5" id="sC0-l3-l5F"/>
+                    <constraint firstAttribute="trailing" secondItem="Ojd-Vj-XnO" secondAttribute="trailing" constant="8" id="yCF-P5-kkD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="specialDealImageView" destination="zFD-Nh-lhm" id="Yaa-PQ-0xu"/>
+                <outlet property="specialDealName" destination="gVE-vn-g86" id="vio-vN-8PE"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
